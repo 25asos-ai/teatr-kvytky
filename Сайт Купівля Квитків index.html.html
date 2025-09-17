@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вистава "За двома зайцями" в Театрі І. Кочерги</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2A42A8;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .ticket-form input, .ticket-form select, .ticket-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .ticket-form button {
+            background-color: #1E49C9;
+            color: white;
+            cursor: pointer;
+        }
+        .ticket-form button:hover {
+            background-color: #29B814;
+        }
+        .price-info {
+            font-size: 1.2em;
+            margin-top: 10px;
+            text-align: center;
+            color: #333;
+        }
+        footer {
+            background-color: #282c34;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Вистава "За двома зайцями"</h1>
+    <p>Театр І. Кочерги, місто Житомир</p>
+</header>
+
+<div class="container">
+    <div class="image-section"> 
+        <img src="800px-1961_za_dvumya_zaytsami.jpg" alt="Вистава За двома зайцями">
+    </div>
+
+    <h2>Замовити квитки</h2>
+
+    <form class="ticket-form">
+        <label for="name">Ваше ім'я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Ваша електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tickets">Кількість квитків:</label>
+        <select id="tickets" name="tickets">
+            <option value="1">1 квиток</option>
+            <option value="2">2 квитки</option>
+            <option value="3">3 квитки</option>
+            <option value="4">4 квитки</option>
+        </select>
+
+        <label for="date">Дата сеансу:</label>
+        <select id="date" name="date">
+            <option value="2025-09-20">20 вересня 2025</option>
+            <option value="2025-09-21">25 вересня 2025</option>
+            <option value="2025-09-22">29 вересня 2025</option>
+        </select>
+
+        <div class="price-info">
+            <p>Ціна квитка: <strong>180 грн</strong></p>
+        </div>
+
+			<button type="submit" style="background-color: ##EBC652;">Забронювати місце</button>
+		<div style="text-align: center; margin-top: 5px;">
+			<button type="button" style="background-color: #BD0F3A; color: white; padding: 15px 30px; font-size: 1.2em; border: none; border-radius: 5px; cursor: pointer;"
+    onclick="alert('Ваше замовлення успішно оформлено!');">Купити квиток</button>
+		</div>
+    </form>
+</div>
+
+
+
+
+</body>
+</html>
